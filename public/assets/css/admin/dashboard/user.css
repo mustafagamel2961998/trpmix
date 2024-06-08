@@ -1,0 +1,300 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* index and recycle bin */
+.user-container{
+    width: 100%;
+    padding: 10px;
+}
+.user-container .add-user-btn-container button.create, .user-container .add-user-btn-container a.create{
+    width: 160px;
+}
+.user-container .add-user-btn-container button.route, .user-container .add-user-btn-container a.route{
+    width: 160px;
+}
+.user-container .add-user-btn-container{
+    width: 100%;
+    padding: 10px;
+}
+.user-container .add-user-btn-container a{
+    width: 120px;
+    padding: 5px 10px;   
+}
+
+.user-container .user-title{
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    padding: 8px 10px;
+    background-color: #2b2e34;
+    border:1px solid #1d1f23;
+    box-shadow: inset 0px -1px 8px #393d46;
+    border-radius: 5px;
+}
+.user-container .user-title p{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+}
+.user-container .user-title p .user-name-text{
+
+    color: #19adde;
+}
+.user-container .user-content{
+    width: 100%;
+}
+.user-container .user-content .user{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+/* users table */
+.user-container .user-content .user .table thead{
+    text-align: center;
+}
+.user-container .user-content .user .table thead tr{
+    padding: 10px;
+    border-bottom: 1px solid #545963;
+}
+.user-container .user-content .user .table thead tr th{
+    padding: 15px 0;
+    background-color: #545963;
+}
+
+.user-container .user-content .user .table tbody tr{
+    text-align: center;
+    border-bottom: 5px solid #545963;
+    vertical-align: middle;
+}
+
+.user-container .user-content .user .table tbody tr img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border:2px solid #d1485f;
+    border-radius: 50px;
+    margin: 0 5px;   
+
+}
+.user-container .user-content .user .table tbody tr img.user-image{
+    cursor: pointer;
+}
+.user-container .user-content .user .table tbody tr img.user-image:hover{
+    transition: 0.5s;
+    opacity: 0.8;
+}
+.user-container .user-content .user .table tbody tr .user-image-privew-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    visibility: hidden;
+}
+.user-container .user-content .user .table tbody tr .user-image-privew-container .user-image-privew-close{
+    position: absolute;
+    top: 40px;
+    right: 30px;
+}
+.user-container .user-content .user .table tbody tr .user-image-privew-container .user-image-privew-close i{
+    font-size: 25px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.user-container .user-content .user .table tbody tr .user-image-privew-container .user-image-privew-close i:hover{
+    transition: 0.5s;
+    color: #afafaf;
+}
+.user-container .user-content .user .table tbody tr .user-image-privew-container .user-image-privew-content{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.user-container .user-content .user .table tbody tr .user-image-privew-container .user-image-privew-content img{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.user-container .user-content .user .table tbody tr .active{
+    position: relative;
+    padding: 5px 0;
+    color: #222222;
+    font-weight: bold;
+    background: #b4eda0;
+    text-align: center;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+.user-container .user-content .user .table tbody tr .active:before{
+    border-radius: 50%;
+    content: '';
+    height: 10px;
+    left: 6px;
+    margin-top: -5px;
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    background: #6BC167; 
+}
+.user-container .user-content .user .table tbody tr .archived{
+    position: relative;
+    padding: 5px 0;
+    color: #222222;
+    font-weight: bold;
+    background: #ffd5d1;
+    text-align: center;
+    border-radius: 5px;
+}
+.user-container .user-content .user .table tbody tr .archived:before{
+    border-radius: 50%;
+    content: '';
+    height: 10px;
+    left: 6px;
+    margin-top: -5px;
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    background: #ff4436; 
+}
+.user-container .user-content .user .table tbody tr .control{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.user-container .user-content .user .table tbody tr td .control-btn{
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background-color: #3b71ca;
+    font-weight: bold;
+    color: #ffffff;
+    box-shadow: 0 8px 9px -4px rgba(59,113,202,0.3),0 4px 18px 0 rgba(59,113,202,0.2);
+}
+.user-container .user-content .user .table tbody tr td .control-btn:hover{
+    transition: 0.5s;
+    background-color: #386bc0;
+    box-shadow: 0 8px 9px -4px rgba(36, 68, 118, 0.3),0 4px 18px 0 rgba(47, 70, 109, 0.2);
+}
+.user-container .user-content .user .table tbody tr td .control-btn i{
+    margin: 0 3px;
+}
+.user-container .user-content .user .table tbody tr td form{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color:#2b2e34;
+}
+.user-container .user-content .user .table tbody tr td form button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background-color: #dc4c64;
+    font-weight: bold;
+    color: #ffffff;
+    box-shadow:  0 8px 9px -4px rgba(220,76,100,0.3),0 4px 18px 0 rgba(220,76,100,0.2);
+}
+.user-container .user-content .user .table tbody tr td form button:hover{
+    transition: 0.5s;
+    background-color: #d1485f;
+    box-shadow:0 8px 9px -4px rgba(108, 31, 44, 0.3),0 4px 18px 0 rgba(97, 40, 50, 0.2);
+}
+.user-container .user-content .user .table tbody tr td form button i{
+    margin: 0 3px;
+}
+
+
+/*create and edit */
+.user-container .user-content .user form{
+    width: 400px;
+    padding: 10px;
+    text-align: center;
+}
+.user-container .user-content .user form div{
+    width: 100%;
+    text-align: right;
+}
+.user-container .user-content .user form div.image{
+    width: 100%;
+    text-align: center;
+}
+.user-container .user-content .user form div img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.user-container .user-content .user form div label{
+    color: #ffffff;
+    padding: 5px 0;
+}
+.user-container .user-content .user form div input[type='text'],
+.user-container .user-content .user form div input[type='email'],
+.user-container .user-content .user form div input[type='password']{
+    width: 100%;
+    text-align: center;
+    background-color: #2b2e34;
+    border:1px solid #1c1e22;
+    color: #ffffff;
+
+}
+.user-container .user-content .user form ::placeholder{
+    color: #ffffff;
+}
+.user-container .user-content .user form div button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.user-container .user-content .user form div button i{
+    padding: 0 2px;
+}
+
+
+
+
+/***********************************************************************************************/
+/* Responsive */
+/* form */
+@media only screen and (max-width:400px) {
+    .user-container{
+        padding: 0;
+    }
+    .user-container .user-content .user{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .user-container .user-title p{
+        font-size: 15px;
+    }
+  }

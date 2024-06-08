@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #735d48, #805e84, #385a5c);
+	background-size: 400% 400%;
+	animation: Gradient 15s ease infinite;
+    font-family: "system-ui"; 
+
+    /* background-image: url('../../../media/default/bg/dashboard_login_bg.jpg'); */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+}
+/* Style */
+/* dashboard login style */
+.dashboard-login-container{
+    width: 100%;
+    height: 100%;
+}
+.dashboard-login-container .dashboard-login-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.dashboard-login-container .dashboard-login-content .dashboard-login{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.dashboard-login-container .dashboard-login-content .dashboard-login .dashboard-login-poster{
+    width: 350px;
+    height: 400px;
+    background-color: #494e58;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.dashboard-login-container .dashboard-login-content .dashboard-login .dashboard-login-poster div{
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.dashboard-login-container .dashboard-login-content .dashboard-login .dashboard-login-poster img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+.dashboard-login-container .dashboard-login-content .dashboard-login .dashboard-login-poster div .brand-name{
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.dashboard-login-container .dashboard-login-content .dashboard-login form{
+    width: 350px;
+    height: 400px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #3a3f48;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.dashboard-login-container .dashboard-login-content .dashboard-login form .input-container{
+    width: 100%;
+}
+.dashboard-login-container .dashboard-login-content .dashboard-login form .input-container .dashboard-login-form-poster{
+    width: 50px;
+    height: 50px;
+}
+.dashboard-login-container .dashboard-login-content .dashboard-login form .input-container .dashboard-login-form-poster img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.dashboard-login-container .dashboard-login-content .dashboard-login form div{
+    width: 90%;
+    margin: auto;
+}
+.dashboard-login-container .dashboard-login-content .dashboard-login form div label{
+    width: 100%;
+    text-align: left;
+    color: #ffffff;
+}
+.dashboard-login-container .dashboard-login-content .dashboard-login form div input{
+    text-align: center;
+    background-color: #2b2e34;
+    border:1px solid #1c1e22;
+    color: #ffffff;
+}
+.dashboard-login-container .dashboard-login-content .dashboard-login form div ::placeholder{
+    color: #ffffff;
+}
+.dashboard-login-container .dashboard-login-content .dashboard-login form button{
+    width: 100%;
+}
+
+/***************************************************************************************************************/
+/* Responsive */
+/* dashboard media query */
+@media only screen and (max-width: 500px) {
+    .dashboard-login-container .dashboard-login-content .dashboard-login .dashboard-login-poster{
+        display: none;
+    }
+    .dashboard-login-container .dashboard-login-content .dashboard-login form{
+        width: 90%;
+    }
+  }
+
+
+/***************************************************************************************************************/
+/* animations */
+/* dashbaord login img  */
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+

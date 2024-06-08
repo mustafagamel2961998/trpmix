@@ -1,0 +1,297 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* index */
+.dashboard-container{
+    width: 100%;
+    padding: 10px;
+}
+
+.dashboard-container .dashboard-content{
+    width: 100%;
+    padding: 5px;
+}
+.dashboard-container .dashboard-content .dashboard{
+    width: 100%;
+}
+
+/* last singers */
+
+.dashboard-container .dashboard-content .dashboard .last-singers-container{
+    width: 100%;
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .last-singers-title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 5px 10px;
+    background-color: #2b2e34;
+    border:1px solid #1d1f23;
+    box-shadow: inset 0px -1px 8px #393d46;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .last-singers-title div{ 
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    vertical-align: middle;
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .last-singers-title div a{
+    font-weight: normal;
+    font-size: 16px;
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table thead{
+    text-align: center;
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table thead tr{
+    padding: 10px;
+    border-bottom: 1px solid #545963;
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table thead tr th{
+    padding: 15px 0;
+    background-color: #545963;
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table tbody tr{
+
+    vertical-align: middle;
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table tbody tr{
+    text-align: center;
+    border-bottom: 5px solid #2e3338;
+}
+
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table tbody tr img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border:2px solid #d1485f;
+    border-radius: 50px;
+    margin: 0 5px;   
+
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table tbody tr img.singer-image{
+    cursor: pointer;
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table tbody tr img.singer-image:hover{
+    transition: 0.5s;
+    opacity: 0.8;
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table tbody tr .singer-image-privew-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    visibility: hidden;
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table tbody tr .singer-image-privew-container .singer-image-privew-close{
+    position: absolute;
+    top: 40px;
+    right: 30px;
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table tbody tr .singer-image-privew-container .singer-image-privew-close i{
+    font-size: 25px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table tbody tr .singer-image-privew-container .singer-image-privew-close i:hover{
+    transition: 0.5s;
+    color: #afafaf;
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table tbody tr .singer-image-privew-container .singer-image-privew-content{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table tbody tr .singer-image-privew-container .singer-image-privew-content img{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table tbody tr .active{
+    position: relative;
+    padding: 5px 10px;
+    color: #222222;
+    font-weight: bold;
+    background: #b4eda0;
+    text-align: center;
+    border-radius: 5px;
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table tbody tr .active:before{
+    border-radius: 50%;
+    content: '';
+    height: 10px;
+    left: 6px;
+    margin-top: -5px;
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    background: #6BC167; 
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table tbody tr .archived{
+    position: relative;
+    padding: 5px 10px;
+    color: #222222;
+    font-weight: bold;
+    background: #ffd5d1;
+    text-align: center;
+    border-radius: 5px;
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table tbody tr .archived:before{
+    border-radius: 50%;
+    content: '';
+    height: 10px;
+    left: 6px;
+    margin-top: -5px;
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    background: #ff4436; 
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table tbody tr .control{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table tbody tr td .control-btn{
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background-color: #3b71ca;
+    font-weight: bold;
+    color: #ffffff;
+    box-shadow: 0 8px 9px -4px rgba(59,113,202,0.3),0 4px 18px 0 rgba(59,113,202,0.2);
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table tbody tr td .control-btn:hover{
+    transition: 0.5s;
+    background-color: #386bc0;
+    box-shadow: 0 8px 9px -4px rgba(36, 68, 118, 0.3),0 4px 18px 0 rgba(47, 70, 109, 0.2);
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table tbody tr td .control-btn i{
+    margin: 0 3px;
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table tbody tr td form{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table tbody tr td form button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background-color: #dc4c64;
+    font-weight: bold;
+    color: #ffffff;
+    box-shadow:  0 8px 9px -4px rgba(220,76,100,0.3),0 4px 18px 0 rgba(220,76,100,0.2);
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table tbody tr td form button:hover{
+    transition: 0.5s;
+    background-color: #d1485f;
+    box-shadow:0 8px 9px -4px rgba(108, 31, 44, 0.3),0 4px 18px 0 rgba(97, 40, 50, 0.2);
+}
+.dashboard-container .dashboard-content .dashboard .last-singers-container .table tbody tr td form button i{
+    margin: 0 3px;
+}
+
+/* last users */
+.dashboard-container .dashboard-content .dashboard .last-users-container{
+    width: 100%;
+    margin-top: 20px;
+}
+.dashboard-container .dashboard-content .dashboard .last-users-container .last-users-title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 5px 10px;
+    background-color: #2b2e34;
+    border:1px solid #1d1f23;
+    box-shadow: inset 0px -1px 8px #393d46;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.dashboard-container .dashboard-content .dashboard .last-users-container .last-users-title div{ 
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    vertical-align: middle;
+}
+.dashboard-container .dashboard-content .dashboard .last-users-container .last-users-title div a{
+    font-weight: normal;
+    font-size: 16px;
+}
+.dashboard-container .dashboard-content .dashboard .last-users-container .table thead{
+    text-align: center;
+}
+.dashboard-container .dashboard-content .dashboard .last-users-container .table thead tr{
+    padding: 10px;
+    border-bottom: 1px solid #545963;
+}
+.dashboard-container .dashboard-content .dashboard .last-users-container .table thead tr th{
+    padding: 15px 0;
+    background-color: #545963;
+}
+.dashboard-container .dashboard-content .dashboard .last-users-container .table tbody tr{
+
+    vertical-align: middle;
+}
+.dashboard-container .dashboard-content .dashboard .last-users-container .table tbody tr{
+    text-align: center;
+    border-bottom: 5px solid #2e3338;
+}
+
+.dashboard-container .dashboard-content .dashboard .last-users-container .table tbody tr td form{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.dashboard-container .dashboard-content .dashboard .last-users-container .table tbody tr td form button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background-color: #dc4c64;
+    font-weight: bold;
+    color: #ffffff;
+    box-shadow:  0 8px 9px -4px rgba(220,76,100,0.3),0 4px 18px 0 rgba(220,76,100,0.2);
+}
+.dashboard-container .dashboard-content .dashboard .last-users-container .table tbody tr td form button:hover{
+    transition: 0.5s;
+    background-color: #d1485f;
+    box-shadow:0 8px 9px -4px rgba(108, 31, 44, 0.3),0 4px 18px 0 rgba(97, 40, 50, 0.2);
+}
+.dashboard-container .dashboard-content .dashboard .last-users-container .table tbody tr td form button i{
+    margin: 0 3px;
+}

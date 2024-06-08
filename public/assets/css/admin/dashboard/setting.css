@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* index */
+.setting-container{
+    width: 100%;
+    padding: 10px;
+}
+.setting-container .setting-title{
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    padding: 8px 10px;
+    background-color: #2b2e34;
+    border:1px solid #1d1f23;
+    box-shadow: inset 0px -1px 8px #393d46;
+    border-radius: 5px;
+}
+.setting-container .setting-title p{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+}
+.setting-container .setting-content{
+    width: 100%;
+}
+.setting-container .setting-content .setting{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.setting-container .setting-content .setting form{
+    width: 600px;
+    padding: 10px;
+    text-align: center;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color:#2b2e34;
+}
+.setting-container .setting-content .setting form div{
+    width: 100%;
+    text-align: right;
+}
+
+.setting-container .setting-content .setting form div p{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 5px 10px;
+    background-color: #3a3f48;
+    border: 1px solid #1d1f23;
+    box-shadow: inset 0px -1px 8px #393d46;
+    border-radius: 5px;
+    margin: 5px 0;
+    color: #ffffff;
+}
+.setting-container .setting-content .setting form div.image{
+    width: 100%;
+    text-align: center;
+}
+.setting-container .setting-content .setting form div img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.setting-container .setting-content .setting form div label{
+    color: #ffffff;
+    padding: 5px 0;
+}
+.setting-container .setting-content .setting form div input[type='text'],
+.setting-container .setting-content .setting form div input[type='file'],
+.setting-container .setting-content .setting form div input[type='color'],
+
+
+.setting-container .setting-content .setting form div textarea{
+    width: 100%;
+    text-align: center;
+    background-color: #2b2e34;
+    border:1px solid #1c1e22;
+    color: #ffffff;
+
+}
+.setting-container .setting-content .setting form ::placeholder{
+    color: #ffffff;
+}
+.setting-container .setting-content .setting form div button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.setting-container .setting-content .setting form div button i{
+    padding: 0 2px;
+}
+
+
+
+/***********************************************************************************************/
+/* Responsive */
+/* form */
+@media only screen and (max-width:400px) {
+    .setting-container{
+        padding: 0;
+    }
+    .setting-container .setting-content .setting{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .setting-container .setting-content .setting form{
+        width: 100%;
+    }
+    .setting-container .setting-title p{
+        font-size: 15px;
+    }
+  }
